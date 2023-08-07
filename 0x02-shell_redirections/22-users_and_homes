@@ -1,2 +1,2 @@
 #!/bin/bash
-ls | cut -f1,6 -d: /etc/passwd
+cut -f1,6 -d: /etc/passwd
