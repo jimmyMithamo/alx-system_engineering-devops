@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 #displays a list of currently running processes
 
-ps axo user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+current_date=$(date +"%b%d")
+ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command --forest | sed "1s/.*/& $current_date/"
