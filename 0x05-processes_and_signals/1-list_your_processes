@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#displays a list of currently running processes.
+#displays a list of currently running processes
 
-echo "USER       PID  PPID  %CPU  %MEM  VSZ    RSS    TTY    STAT  START       TIME  COMMAND"
 ps axo user,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
