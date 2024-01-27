@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#displays pid of processes containing bash
+
+
+current_date=$(date +"%b%d")
+ps axo user,pid,%cpu,%mem,vsz,rss,tty,stat,lstart,time,command --forest | sed "1s/.*/& $current_date/" | grep "bash"
